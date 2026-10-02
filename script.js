@@ -214,9 +214,9 @@ const statsObserver = new IntersectionObserver(entries => {
     nums.forEach(num => {
       const text = num.textContent;
       if (text.includes('580')) animateCounter(num, 580);
-      else if (text.includes('9.52')) {
+      else if (text.includes('9.07')) {
         num.textContent = '0.00';
-        animateCounter(num, 9.52, 2);
+        animateCounter(num, 9.07, 2);
       }
     });
     statsObserver.unobserve(e.target);
