@@ -43,22 +43,11 @@ hamburger.addEventListener('click', () => {
   navLinksEl.classList.toggle('open');
 });
 
-/* ── 4. Dark / Light mode toggle ───────────────────── */
-const themeToggle = document.getElementById('theme-toggle');
-const icon        = themeToggle.querySelector('i');
-
-// Restore preference
-if (localStorage.getItem('theme') === 'light') {
-  document.body.classList.add('light');
-  icon.className = 'fas fa-sun';
-}
-
-themeToggle.addEventListener('click', () => {
-  document.body.classList.toggle('light');
-  const isLight = document.body.classList.contains('light');
-  icon.className = isLight ? 'fas fa-sun' : 'fas fa-moon';
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-});
+/* ── 4. Theme ─────────────────────────────────────────
+   Single Blue & White theme — body.light is applied once
+   on load so the (identical) light-mode CSS variables are
+   always in effect; no toggle needed. ─────────────────── */
+document.body.classList.add('light');
 
 /* ── 5. Typing animation ────────────────────────────── */
 const roles   = ['Full-Stack Developer', 'AI/ML Enthusiast', 'Problem Solver', 'Competitive Programmer'];

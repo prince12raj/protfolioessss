@@ -6,7 +6,7 @@
   <title>Prince Raj | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
@@ -18,15 +18,17 @@
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="nav-links">
-      <li><a href="#hero"    class="nav-link">Home</a></li>
-      <li><a href="#about"   class="nav-link">About</a></li>
-      <li><a href="#skills"  class="nav-link">Skills</a></li>
-      <li><a href="#projects"class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li><a href="#hero"       class="nav-link">Home</a></li>
+      <li><a href="#about"      class="nav-link">About</a></li>
+      <li><a href="#education"  class="nav-link">Education</a></li>
+      <li><a href="#skills"     class="nav-link">Skills</a></li>
+      <li><a href="#projects"   class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#achievements" class="nav-link">Achievements</a></li>
+      <li><a href="#profiles"   class="nav-link">Profiles</a></li>
+      <li><a href="#contact"    class="nav-link">Contact</a></li>
     </ul>
-    <button id="theme-toggle" aria-label="Toggle theme">
-      <i class="fas fa-moon"></i>
-    </button>
+    <a href="resume.pdf" download class="btn-resume-nav"><i class="fas fa-download"></i> Resume</a>
   </nav>
 
   <!-- ─── HERO ──────────────────────────────────── -->
@@ -43,11 +45,17 @@
           CS undergrad at Galgotias University (CGPA 9.07) passionate about AI/ML, full-stack development, and competitive programming. I build things that matter.
         </p>
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn btn-outline"><i class="fas fa-download"></i> Download Resume</a>
+          <a href="#contact"  class="btn btn-outline">Contact Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/prince12raj" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://leetcode.com/prince12raj" target="_blank" aria-label="LeetCode"><i class="fas fa-code"></i></a>
         </div>
         <div class="hero-stats">
-          <div class="stat"><span class="stat-num">750+</span><span class="stat-label">LeetCode Problems</span></div>
+          <div class="stat"><span class="stat-num">580+</span><span class="stat-label">LeetCode Problems</span></div>
           <div class="stat"><span class="stat-num">9.07</span><span class="stat-label">CGPA</span></div>
           <div class="stat"><span class="stat-num">2×</span><span class="stat-label">Hackathon Winner</span></div>
         </div>
@@ -98,79 +106,98 @@
     </div>
   </section>
 
+  <!-- ─── EDUCATION ─────────────────────────────── -->
+  <section id="education" class="section">
+    <div class="section-header">
+      <span class="section-tag">02. education</span>
+      <h2>Academic Background</h2>
+    </div>
+    <div class="edu-timeline">
+      <div class="edu-card">
+        <div class="edu-dot"></div>
+        <div class="edu-body">
+          <span class="edu-date">Sep 2023 – Jun 2027</span>
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p class="edu-inst">Galgotias University, Greater Noida, India</p>
+          <p class="edu-score">CGPA: 9.07 / 10</p>
+        </div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-dot"></div>
+        <div class="edu-body">
+          <span class="edu-date">Jul 2022 – Jun 2023</span>
+          <h3>Senior Secondary Education (Class XII)</h3>
+          <p class="edu-inst">R.D.S College, Muzaffarpur, Bihar, India</p>
+          <p class="edu-score">Percentage: 72.4%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ─── SKILLS ────────────────────────────────── -->
   <section id="skills" class="section dark-section">
     <div class="section-header">
-      <span class="section-tag">02. skills</span>
+      <span class="section-tag">03. skills</span>
       <h2>Tech Stack</h2>
     </div>
     <div class="skills-wrapper">
       <div class="skill-category">
-        <h3 class="cat-title">Languages</h3>
-        <div class="skill-bar-list">
-          <div class="skill-item" data-level="88">
-            <div class="skill-meta"><span>Java</span><span class="skill-pct">88%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="80">
-            <div class="skill-meta"><span>Python</span><span class="skill-pct">80%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="75">
-            <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">75%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="70">
-            <div class="skill-meta"><span>SQL</span><span class="skill-pct">70%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3 class="cat-title">Frontend</h3>
-        <div class="skill-bar-list">
-          <div class="skill-item" data-level="82">
-            <div class="skill-meta"><span>React</span><span class="skill-pct">82%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="85">
-            <div class="skill-meta"><span>HTML / CSS</span><span class="skill-pct">85%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="72">
-            <div class="skill-meta"><span>Tailwind CSS</span><span class="skill-pct">72%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-        </div>
-      </div>
-      <div class="skill-category">
-        <h3 class="cat-title">Backend & AI/ML</h3>
-        <div class="skill-bar-list">
-          <div class="skill-item" data-level="78">
-            <div class="skill-meta"><span>Flask</span><span class="skill-pct">78%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <div class="skill-item" data-level="75">
-            <div class="skill-meta"><span>Machine Learning</span><span class="skill-pct">75%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div>
-          <!-- <div class="skill-item" data-level="65">
-            <div class="skill-meta"><span>Blockchain</span><span class="skill-pct">65%</span></div>
-            <div class="skill-track"><div class="skill-fill"></div></div>
-          </div> -->
+        <h3 class="cat-title">Programming Languages</h3>
+        <p class="cat-intro">Core languages I write and problem-solve in daily.</p>
+        <div class="tech-pills">
+          <span class="pill">Java</span>
+          <span class="pill">Python</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">SQL</span>
         </div>
       </div>
       <div class="skill-category">
         <h3 class="cat-title">Core CS</h3>
+        <p class="cat-intro">Fundamentals behind every system I design and optimize.</p>
         <div class="tech-pills">
           <span class="pill">Data Structures</span>
           <span class="pill">Algorithms</span>
           <span class="pill">OOP</span>
           <span class="pill">DBMS</span>
-          <span class="pill">Git / GitHub</span>
-          <span class="pill">REST APIs</span>
-          <!-- <span class="pill">Node.js</span> -->
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">AI / ML</h3>
+        <p class="cat-intro">Applied across deployed projects — from CNN-based detection to RAG pipelines.</p>
+        <div class="tech-pills">
+          <span class="pill">Machine Learning</span>
+          <span class="pill">CNN</span>
+          <span class="pill">RAG</span>
           <span class="pill">scikit-learn</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">Backend & Development</h3>
+        <p class="cat-intro">Building and shipping full-stack applications end to end.</p>
+        <div class="tech-pills">
+          <span class="pill">Flask</span>
+          <span class="pill">Streamlit</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">HTML5 / CSS3</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">Databases</h3>
+        <p class="cat-intro">Comfortable modeling, querying, and securing relational data.</p>
+        <div class="tech-pills">
+          <span class="pill">MySQL</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Supabase</span>
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="cat-title">Tools</h3>
+        <p class="cat-intro">The everyday toolkit behind my development workflow.</p>
+        <div class="tech-pills">
+          <span class="pill">Git / GitHub</span>
+          <span class="pill">VS Code</span>
+          <span class="pill">Hugging Face</span>
+          <span class="pill">Anaconda</span>
         </div>
       </div>
     </div>
@@ -179,7 +206,7 @@
   <!-- ─── PROJECTS ──────────────────────────────── -->
   <section id="projects" class="section">
     <div class="section-header">
-      <span class="section-tag">03. projects</span>
+      <span class="section-tag">04. projects</span>
       <h2>Featured Work</h2>
     </div>
     <div class="projects-grid">
@@ -192,10 +219,15 @@
           </div>
           <h3>Smart Agriculture System</h3>
           <span class="project-status">Deployed: Live · Mar 2026 – Present</span>
-          <p>Full-stack AI-powered smart agriculture platform with 3 AI models, including a CNN-based crop disease detector (72% accuracy), a crop recommendation system, and an AI chatbot. ML models deployed on Hugging Face; applies computer vision, NLP, and agricultural analytics to deliver disease detection and crop recommendations.</p>
+          <p class="card-problem">Farmers often lack fast, accessible tools for diagnosing crop disease and choosing what to plant — this platform brings AI-powered agricultural decision support to the field.</p>
+          <ul class="card-features">
+            <li>CNN-based crop disease detector (72% accuracy)</li>
+            <li>Crop recommendation system driven by agricultural analytics</li>
+            <li>AI chatbot for farmer queries, with ML models deployed on Hugging Face</li>
+          </ul>
           <div class="card-links">
-            <a href="https://github.com/prince12raj/SMART_Agriculture" target="_blank" class="card-link"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://smart-agriculture-y8c4.onrender.com/" class="card-link card-link-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/prince12raj" target="_blank" class="card-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="#" class="card-link card-link-live"><i class="fas fa-external-link-alt"></i> Live</a>
           </div>
         </div>
         <div class="card-glow"></div>
@@ -209,9 +241,14 @@
           </div>
           <h3>Nexus AI Governance Platform</h3>
           <span class="project-status">Deployed: Live · Apr 2026 – Present</span>
-          <p>AI governance platform for policy compliance auditing, risk assessment, and automated governance workflows. Integrates AI agents with Retrieval-Augmented Generation (RAG) pipelines to analyze policies and generate compliance recommendations, with PII detection via Supabase PostgreSQL for stronger data security and governance.</p>
+          <p class="card-problem">Organizations struggle to keep policy compliance auditing and risk assessment up to date manually — Nexus automates governance workflows with AI-driven analysis.</p>
+          <ul class="card-features">
+            <li>AI agents integrated with Retrieval-Augmented Generation (RAG) pipelines</li>
+            <li>Automated policy analysis and compliance recommendations</li>
+            <li>PII detection via Supabase PostgreSQL for stronger data security</li>
+          </ul>
           <div class="card-links">
-            <a href="https://github.com/prince12raj/nexus-ai-governance" target="_blank" class="card-link"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/prince12raj" target="_blank" class="card-link"><i class="fab fa-github"></i> GitHub</a>
             <a href="https://nexus-ai-governance-0007.streamlit.app" target="_blank" class="card-link card-link-live"><i class="fas fa-external-link-alt"></i> Live</a>
           </div>
         </div>
@@ -222,10 +259,10 @@
   </section>
 
   <!-- ─── ACHIEVEMENTS ──────────────────────────── -->
-  <section id="achievements" class="section dark-section">
+  <section id="experience" class="section dark-section">
     <div class="section-header">
-      <span class="section-tag">04. achievements</span>
-      <h2>Milestones</h2>
+      <span class="section-tag">05. experience</span>
+      <h2>Internship Experience</h2>
     </div>
     <div class="timeline">
       <div class="tl-item">
@@ -233,48 +270,85 @@
         <div class="tl-content">
           <span class="tl-date">Sep – Oct 2025</span>
           <h4>AI & Machine Learning Intern — TechieHelp</h4>
-          <p>Applied AI/ML concepts and AWS tools during internship projects, developed a Forest Fire Prediction model using Python and machine learning algorithms, and analyzed structured datasets using SQL for efficient data processing and feature extraction.</p>
+          <p class="tl-role">ML Developer</p>
+          <ul class="tl-points">
+            <li>Applied AI/ML concepts and AWS tools across internship projects and experiments.</li>
+            <li>Developed a Forest Fire Prediction model using Python and machine learning algorithms.</li>
+            <li>Analyzed structured datasets using SQL for efficient data processing and feature extraction.</li>
+          </ul>
         </div>
       </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">Jun 2025</span>
-          <h4>1st Runner-up — Hackloop, ThoughtWorks Gurugram</h4>
-          <p>Built an AI-driven prototype tackling real-world social impact with practical deployment strategy.</p>
-        </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ──────────────────────────── -->
+  <section id="achievements" class="section">
+    <div class="section-header">
+      <span class="section-tag">06. achievements</span>
+      <h2>Achievements & Certifications</h2>
+    </div>
+    <div class="achieve-grid">
+      <div class="achieve-card">
+        <i class="fas fa-trophy"></i>
+        <span class="tl-date">Jun 2025</span>
+        <h4>1st Runner-up — Hackloop</h4>
+        <p>ThoughtWorks, Gurugram. Built an AI-driven prototype tackling real-world social impact with a practical deployment strategy.</p>
       </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">Jul 2025</span>
-          <h4>Finalist — Hack4Health, IIIT Delhi</h4>
-          <p>Designed a healthcare-focused AI/ML solution for preventive care and patient well-being.</p>
-        </div>
+      <div class="achieve-card">
+        <i class="fas fa-medal"></i>
+        <span class="tl-date">Jul 2025</span>
+        <h4>Finalist — Hack4Health</h4>
+        <p>IIIT Delhi. Designed a healthcare-focused AI/ML solution for preventive care and patient well-being.</p>
       </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">Jun 2025</span>
-          <h4>AI Primer Certification — Infosys</h4>
-          <p>Completed Infosys AI Primer certification program.</p>
-        </div>
+      <div class="achieve-card">
+        <i class="fas fa-certificate"></i>
+        <span class="tl-date">Jun 2025</span>
+        <h4>AI Primer Certification</h4>
+        <p>Infosys. Completed the Artificial Intelligence Primer certification program.</p>
       </div>
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-content">
-          <span class="tl-date">Ongoing</span>
-          <h4>1810+ Peak Rating on LeetCode</h4>
-          <p>Achieved a peak contest rating of 1810+, demonstrating strong problem-solving and algorithmic skills across 580+ problems solved.</p>
-        </div>
+      <div class="achieve-card">
+        <i class="fas fa-code"></i>
+        <span class="tl-date">Ongoing</span>
+        <h4>1810+ Peak Rating on LeetCode</h4>
+        <p>580+ problems solved, demonstrating strong problem-solving and algorithmic skills.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ─── CODING & PROFESSIONAL PROFILES ────────── -->
+  <section id="profiles" class="section dark-section">
+    <div class="section-header">
+      <span class="section-tag">07. profiles</span>
+      <h2>Coding & Professional Profiles</h2>
+    </div>
+    <div class="profiles-grid">
+      <a href="https://github.com/prince12raj" target="_blank" class="profile-card">
+        <i class="fab fa-github"></i>
+        <h4>GitHub</h4>
+        <p>Projects & contributions</p>
+      </a>
+      <a href="https://leetcode.com/prince12raj" target="_blank" class="profile-card">
+        <i class="fas fa-code"></i>
+        <h4>LeetCode</h4>
+        <p>Peak rating 1810+ · 580+ solved</p>
+      </a>
+      <a href="#" target="_blank" class="profile-card">
+        <i class="fab fa-linkedin"></i>
+        <h4>LinkedIn</h4>
+        <p>Professional network</p>
+      </a>
+      <a href="#" target="_blank" class="profile-card">
+        <i class="fas fa-layer-group"></i>
+        <h4>Codolio</h4>
+        <p>Coding profile summary</p>
+      </a>
     </div>
   </section>
 
   <!-- ─── CONTACT ───────────────────────────────── -->
   <section id="contact" class="section">
     <div class="section-header">
-      <span class="section-tag">05. contact</span>
+      <span class="section-tag">08. contact</span>
       <h2>Let's Connect</h2>
     </div>
     <div class="contact-wrapper">
